@@ -1,0 +1,39 @@
+.header{
+    background-image: url(./bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+.card-effect:hover{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    animation: pulse;
+    animation-duration: 2.5s;
+}
+.card-img-filter{
+    filter: brightness(0.5);
+}
+.card-img{
+    height: 270px;
+}
+.filter{
+    filter: brightness(0.6);
+    height: 900px;
+}
+.xd{
+    padding-bottom: 33px;
+    margin-right: -900;
+} 
+.footer{
+    background-color: rgb(75, 74, 74);
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+}
+.footer .img-1{
+    display: block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
