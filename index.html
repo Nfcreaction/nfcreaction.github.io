@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-Ar">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,34 +11,61 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-  <header class="header container-fluid">
+  <header class="container-fluid">
     <div class="container text-white">
-      <nav class="row justify-content-between align-items-center pt-4">
-        <a href="index.html" class="col-auto">
-          <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/355/5897078355_7ce2260d-a98e-4717-85d5-b340d8c0ac39.png?cb=1629911410
-                  " alt="logo nfc">
+      <div class="pt-4">
+        <a href="index.html">
+          <img
+            src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/355/5897078355_7ce2260d-a98e-4717-85d5-b340d8c0ac39.png?cb=1629911410"
+            alt="NFCreaction logo">
         </a>
-      </nav>
-      <div class="row pt-5">
+      </div>
+      <div class="pt-5">
         <div class="col-12 col-md-6 pt-5">
-          <span class="pt-5">
-            <span class="text-warning h4 d-block">CREANDO UN MUNDO</span> 
-            <span class="d-block h1">DIGITAL</span>
-          </span>
-          <p>Somos un grupo de desarrolladores con mas de 10 años de experiencia y desarrollamos todo tipo de cosas</p>
-          <a href="#" class="btn btn-warning col-auto">REGISTRATE</a>
-          <a href="#" class="btn btn-warning boton2 col-auto">INICIAR SESION</a>
+          <div class="text-warning h4 d-block">CREANDO UN MUNDO</div>
+          <div class="d-block h1">DIGITAL</div>
+          <p>Somos un grupo de desarrolladores con más de 5 años de experiencia en desarrollo digital.</p>
+          <a href="registro" class="btn btn-warning">REGISTRATE</a>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#inicioSesion">INICIAR
+            SESIÓN</button>
         </div>
       </div>
     </div>
   </header>
+  <div class="modal fade" id="inicioSesion" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña:</label>
+              <input type="password" class="form-control" name="password" id="password">
+            </div>
+
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Iniciar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="container">
     <div class="row">
       <div class="col-12 text-center">
         <h2 class="pt-5">SERVICIOS</h2>
         <h3>QUE TENEMOS PARA OFRECERLE</h3>
-        <p class="text-muted">seleccione una de las 4 opciones para ver lo que desea adquirir</p>
+        <P class="text-muted">----seleccione una de las 4 opciones para ver lo que desea adquirir----</P>
       </div>
     </div>
     <div class="card-group">
@@ -45,153 +73,169 @@
         <img src="https://media.istockphoto.com/vectors/responsive-web-design-vector-id1177339068?k=20&m=1177339068&s=612x612&w=0&h=MPFFmZXgOFultsgWSDBdZl8z8uQIV8XwnnSiB8mbHAE=
                      " alt="paginas web" class="card-img card-img-filter">
         <div class="card-img-overlay">
-          <h4 class="card-title">Paginas Web</h4>
-          <p class="card-text">Creamos paginas wed para todo tipo de dispositivo, a su gusto y para todo tipo de emprendimiento o
-            empresa.</p>
+          <h4 class="card-title">Páginas Web</h4>
+          <p class="card-text">Creamos todo tipo de páginas web para cualquier dispositivo, emprendimiento o idea.</p>
         </div>
-      </div> 
+      </div>
       <div class="card border-0 text-white card-effect p-2">
         <img src="https://media.istockphoto.com/vectors/mobile-app-a-mobile-device-with-a-user-interface-layout-with-active-vector-id1189381441?k=20&m=1189381441&s=612x612&w=0&h=bqhP0hVhE2ZQrfqzpXxkeRBuoSeJZfg6rNd7yp-qfUs=
         " alt="app moviles" class="card-img card-img-filter">
         <div class="card-img-overlay">
-          <h4 class="card-title">Aplicaciones Moviles</h4>
-          <p class="card-text">Desarrollamos apps para todo tipo de dispositivo, con las mejores plantillas para elejir.</p>
+          <h4 class="card-title">Aplicaciones Móviles</h4>
+          <p class="card-text">Desarrollamos APPs móviles para Android o IOs, aptas para todo tipo de smartphone.</p>
         </div>
-      </div>      
+      </div>
     </div>
-    <div class="card-group">
+    <!--<div class="card-group">
       <div class="card border-0 text-white card-effect p-2">
         <img src="https://media.istockphoto.com/vectors/mobile-app-a-mobile-device-with-a-user-interface-layout-with-active-vector-id1189381441?k=20&m=1189381441&s=612x612&w=0&h=bqhP0hVhE2ZQrfqzpXxkeRBuoSeJZfg6rNd7yp-qfUs=
         " alt="app moviles" class="card-img card-img-filter">
         <div class="card-img-overlay">
-          <h4 class="card-title">Diseño</h4>
-          <p class="card-text">Desarrollamos apps para todo tipo de dispositivo, con las mejores plantillas para elejir.</p>
+          <h4 class="card-title">Diseños</h4>
+          <p class="card-text">Desarrollamos apps para todo tipo de dispositivo, con las mejores plantillas para elejir.
+          </p>
         </div>
-      </div>     
+      </div>
       <div class="card border-0 text-white card-effect p-2">
-        <img src="https://media.istockphoto.com/vectors/website-app-design-development-technology-software-code-programming-vector-id1136829806?k=20&m=1136829806&s=612x612&w=0&h=loHw619SddZetge41YWHtyeuZadSreVSZLhTge0SRjU=" 
-        alt="foto seg.info."class="card-img card-img-filter">
+        <img
+          src="https://media.istockphoto.com/vectors/website-app-design-development-technology-software-code-programming-vector-id1136829806?k=20&m=1136829806&s=612x612&w=0&h=loHw619SddZetge41YWHtyeuZadSreVSZLhTge0SRjU="
+          alt="foto seg.info." class="card-img card-img-filter">
         <div class="card-img-overlay">
           <h4 class="card-title">Seguridad Informatica</h4>
-          <p class="card-text">Desarrollamos apps para todo tipo de dispositivo, con las mejores plantillas para elejir.</p>
+          <p class="card-text">Desarrollamos apps para todo tipo de dispositivo, con las mejores plantillas para elejir.
+          </p>
         </div>
       </div>
+    </div>-->
+    <div class="row text-center pt-5 d-none d-sm-block">
+      <h2 class="pt-5">VISTA PREVIA DE ALGUNOS PROYETOS</h2>
     </div>
-    <div class="row text-center pt-5 d-none d-md-bolck">
-      <h2 class="pt-5">VISTA PREVIA A ALGUNOS PROYECTOS</h2>
-    </div>
-  <div id="carouselExampleCaptions" class="d-none d-md-block carousel slide contfilter pt-2 text-center"
-    data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-        aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://cdn.appdesign.dev/wp-content/uploads/2021/02/Disen%CC%83o-pa%CC%81ginas-web.jpg" alt="..."
-          class="d-block  col-12 filter">
-        <div class="carousel-caption d-none d-md-block xd">
-          <h5 class="text-uppercase">paginas web</h5>
-          <p>creamos desde 0 el diseño para tu pagina web</p>
-        </div>
+    <div id="carouselExampleCaptions" class="d-none d-sm-block carousel slide pt-2 text-center" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
       </div>
-      <div class="carousel-item">
-        <img src="https://i.pinimg.com/originals/e4/99/22/e49922b086673430865a4ebd3502e14e.png
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://cdn.appdesign.dev/wp-content/uploads/2021/02/Disen%CC%83o-pa%CC%81ginas-web.jpg" alt="..."
+            class="d-block  col-12 filter">
+          <div class="carousel-caption d-none d-md-block xd">
+            <h5 class="text-uppercase">paginas web</h5>
+            <p>creamos desde 0 el diseño para tu pagina web</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.pinimg.com/originals/e4/99/22/e49922b086673430865a4ebd3502e14e.png
             " class="row d-block col-12 filter" alt="...">
-        <div class="carousel-caption d-none d-md-block xd">
-          <h5 class="text-uppercase">apps moviles</h5>
-          <p>creamos apps para tu empresa o emprendimiento y lo subimos a goglee play</p>
+          <div class="carousel-caption d-none d-md-block xd">
+            <h5 class="text-uppercase">apps moviles</h5>
+            <p>creamos apps para tu empresa o emprendimiento y lo subimos a goglee play</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.obicex.es/wp-content/uploads/2021/06/que-es-seguridad-informatica.jpg
+            " class="d-block col-12 filter" alt="...">
+          <div class="carousel-caption d-none d-md-block xd">
+            <h5 class="text-uppercase">seguridad informatica</h5>
+            <p>tenemos un equipo las 24hs del dia asegurando tu pagina web</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.arteneo.com/wp-content/uploads/2019/06/El-storyboard.jpg
+            " class="d-block col-12 filter" alt="...">
+          <div class="carousel-caption d-none d-md-block xd">
+            <h5 class="text-uppercase">videojuegos</h5>
+            <p>creamos videojuegos como usted lo ordene a su gusto y cada cosa con su consentimiento</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://www.obicex.es/wp-content/uploads/2021/06/que-es-seguridad-informatica.jpg
-            " class="d-block col-12 filter" alt="...">
-        <div class="carousel-caption d-none d-md-block xd">
-          <h5 class="text-uppercase">seguridad informatica</h5>
-          <p>tenemos un equipo las 24hs del dia asegurando tu pagina web</p>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section class="container">
+      <div class="row pt-3">
+        <div class="text-center">
+          <h4 class="text-warning">¡NO SE PREOCUPE!</h4>
+          <h5>PUEDE PEDIR SU COMPRA TRANQUILAMENTE DE LA SIGUENTE FORMA</h5>
+        </div>
+        <p class="col-md-6 col-12">
+          Puede hacer su compra por la página o contactarse con nosotros por WhatsApp o en nuestras redes sociales.<br>
+          Elija su opción de compra, cree un cuenta y listo, así de fácil..<br>
+          El tener un cuneta le facilitara poder administrar sus páginas y contactarse con nosotros.
+        </p>
+        <p class="col-md-6 col-12">
+          Una vez realizada su compra estaremos en contacto con usted para hablar sobre los aspectos de su producto. Con
+          un informe semanal sobre los avances.<br>
+          Finalizado el producto podra administrarlo y pedir las modificaciones necesarias desde la página "AdminNFC".
+        </p>
+        <div class="col-6 col-md-12 pt-2 text-center">
+          <h6>CON SU PRIMERA COMPRA:</h6>
+          <span class="font-weigth-bold text-success h5">-20% de descuento</span>
+        </div>
+        <div class="col-6 col-md-12 pt-2 text-center">
+          <h6>A LOS PRIMEROS 10 COMPRADORES:</h6>
+          <span class="font-weigth-bold text-success h5">-15% de descuento</span>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://www.arteneo.com/wp-content/uploads/2019/06/El-storyboard.jpg
-            " class="d-block col-12 filter" alt="...">
-        <div class="carousel-caption d-none d-md-block xd">
-          <h5 class="text-uppercase">videojuegos</h5>
-          <p>creamos videojuegos como usted lo ordene a su gusto y cada cosa con su consentimiento</p>
-        </div>
+      <p class="pt-4 text-center">-Creando un mundo digital-</p>
+    </section>
+    <div class="d-block text-center pb-3">
+      <a class="btn btn-warning link col-12 col-md-4 text-center" data-bs-toggle="collapse" href="#collapseExample"
+        role="button" aria-expanded="false" aria-controls="collapseExample">MÁS INFORMACIÓN</a>
+    </div>
+    <div class="collapse col-12 col-md-6 mx-auto pb-1" id="collapseExample">
+      <div class="card card-body">
+        <form action="" method="post" class="p-2">
+          <p>Envienos un correo con su consulta</p>
+          <span class="d-block pb-3">
+            <label for="email" class="form-label">Correo:</label>
+            <input type="email" class="form-control" placeholder="Ingrese su correo:">
+          </span>
+          <span>
+            <label for="consulta" class="form-label">Escriba su consulta:</label>
+            <textarea name="consulta" id="consulta" class="form-control"></textarea>
+          </span>
+          <span class="d-block text-end pt-2">
+            <input type="submit" value="Enviar" class="btn btn-primary">
+          </span>
+        </form>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <section class="container">
-    <div class="row pt-3 text-center">
-      <h4 class="text-warning">NO SE PREOCUPE</h4>
-      <h5>PUEDE PEDIR SU COMPRA TRANQUILAMENTE DE LA SIGUENTE FORMA</h5>
-      <p class="col-md-6 col-12">Puede hacer su pedido por la pagina,puede contantactarse con nosotros o mandarnos un md en
-        nuestras redes sosiales.Puede hacer todas las consultas que usted quiera y cuando quiera y cuando desida abonar
-        puede hacerlo con una tarjeta de credito o devito,en las cuotas que usted quiera.</p>
-      <p class="col-md-6 col-12">Puede consultar sobre como anda el proyecta cuando usted quiera con una amplia vision de lo que
-        va a ser su producto final,mediante videoconferencias con nuestro equipo y usted.
-        Asi facilitando la comunicasion y mejorar o modificar aspectos de la pagina con su consentimiento.</p>
-      <div class="col-6 col-md-3 pt-2 text-uppercase ">
-        <h6>pagina normal</h3>
-        <p class="font-weigth-bold text-success h4">$5.000-$8.000</p>
-      </div>
-      <div class="col-6 col-md-3 pt-2 text-uppercase ">
-        <h6>pagina avanzada+hosting</h6>
-        <p class="font-weigth-bold text-success h4">$10.000-$16.000</p>
-      </div>
-      <div class="col-6 col-md-3 pt-1 h6 text-uppercase ">pagina premium+hosting <span class=" h5">GRATIS</span>
-        <p class="font-weigth-bold text-success h4 pt-2">$20.000-$32.000</p>
-      </div>
-      <div class="col-6 col-md-3 pt-2 ">
-        <h6>SEGURIDAD INFORMATICA</h6>
-        <p class="font-weigth-bold text-success h4">$6.300-$8.400</p>
-      </div>
-    </div>
-    <p class="pt-4 text-center text-uppercase ">todo siempre a tu gusto</p>
   </section>
-  <div class="d-block text-center pb-5 ">
-    <a href="" class="btn btn-warning link col-12 col-md-4">MÁS INFORMACIÓN</a>
-  </div>
-</section>
-<footer class="container-fluid bg-dark text-white">
-  <div class="container pt-4">
-    <nav class="row pt-4">
-      <a href="#" class="col-md-6 col-12 d-flex align-items-center">
-        <img
-          src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/355/5897078355_7ce2260d-a98e-4717-85d5-b340d8c0ac39.png?cb=1629911410"
-          alt="logo" class="img-logo mr-2">
-      </a>
-      <ul class="col-md-6 col-12 list-unstyled justify-content-between">
-        <li class="font-weight-bold text-uppercase">redes sociales</li>
-        <li class="d-flex justify-content-between">
-          <a href="#" class="text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="text-reset"><i class="fab fa-whatsapp"></i></a>
-          <a href="#" class="text-reset"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-reset">
-            <i class="fas fa-paper-plane"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-  <script src="https://kit.fontawesome.com/54526a5a5c.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <footer class="container-fluid bg-dark text-white">
+    <div class="container pt-4">
+      <nav class="row pt-4">
+        <a href="index.html" class="col-md-6 col-12 d-flex align-items-center">
+          <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/355/5897078355_7ce2260d-a98e-4717-85d5-b340d8c0ac39.png?cb=1629911410"
+            alt="NFCreaction logo" class="img-logo mb-3">
+        </a>
+        <ul class="col-md-6 col-12 list-unstyled">
+          <li class="font-weight-bold text-center">CONTACTENOS</li>
+          <li class="d-flex justify-content-around">
+            <a href="#" class="text-reset"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-reset"><i class="fab fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
+  <script src="https://kit.fontawesome.com/54526a5a5c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </html>
